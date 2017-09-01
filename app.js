@@ -64,6 +64,10 @@ app.get("/game", function(req, res){
     res.render("game", {deck: deck});
 });
 
+app.get("/about", function(req, res){
+   res.render("about"); 
+});
+
 // Compile a deck of n cards (eventually: from the deck(s) the user selects)
 function compileDeck(n){
     return cards; //Placeholder
