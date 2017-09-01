@@ -18,6 +18,10 @@ i.icon {
     margin-top: 5.0em;
 }
 
+.invisible {
+    opacity: 0;
+}
+
 #landingImage {
     width: 100%;
     height: 100%;
