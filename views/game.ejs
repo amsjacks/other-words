@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<h1>Game page</h1>
+
+<div class="ui medium images">
+    <%for(var i=0; i<7; i++) {%>
+        <% var url = deck.pop().imageURL; %>
+        <img class="ui medium rounded image" src=<%= url%>>
+    <% } %>
+</div>
+
+
+
+<script src="game.js"></script>
+<% include partials/footer %>

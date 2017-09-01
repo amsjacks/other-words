@@ -1,0 +1,22 @@
+{
+  "name": "other-words",
+  "version": "1.0.0",
+  "description": "A language game for groups, designed to help learners practice language skills in a social setting while having fun.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "language",
+    "game",
+    "multiplayer"
+  ],
+  "author": "Aislin Jackson",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "semantic-ui": "^2.2.13"
+  }
+}
