@@ -1,17 +1,21 @@
 <% include partials/header %>
 
-<h1>Game page</h1>
+<div class="container main">
 
-<p class="invisible">
-    <%-JSON.stringify(deck) %>
-</p>
+    <h1>Game page</h1>
+    
+    <p class="invisible">
+        <%-JSON.stringify(deck) %>
+    </p>
+    
+    
+    <!--<div class="ui medium images">-->
+    <!--    <%//for(var i=0; i<7; i++) {%>-->
+    <!--        <% //var url = hand[i].imageURL; %>-->
+    <!--        <img class="ui medium rounded image" src=<%= //url%>>-->
+    <!--    <% //} %>-->
+    <!--</div>-->
 
-
-<!--<div class="ui medium images">-->
-<!--    <%//for(var i=0; i<7; i++) {%>-->
-<!--        <% //var url = hand[i].imageURL; %>-->
-<!--        <img class="ui medium rounded image" src=<%= //url%>>-->
-<!--    <% //} %>-->
-<!--</div>-->
+</div>
 
 <% include partials/footer %>
