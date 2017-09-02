@@ -8,14 +8,22 @@
         <%-JSON.stringify(deck) %>
     </p>
     
+    <div class="ui container">
+        <button id="drawButton">Draw</button>
+        <button id="discardButton">Discard unselected</button>
+    </div>
     
-    <!--<div class="ui medium images">-->
-    <!--    <%//for(var i=0; i<7; i++) {%>-->
-    <!--        <% //var url = hand[i].imageURL; %>-->
-    <!--        <img class="ui medium rounded image" src=<%= //url%>>-->
-    <!--    <% //} %>-->
-    <!--</div>-->
-
+    <div class="ui container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    
 </div>
 
 <script type="text/javascript" src="scripts/game.js"></script>
