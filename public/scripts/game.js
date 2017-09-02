@@ -14,6 +14,16 @@ function init() {
         drawCards();
         refresh();
     });
+    
+    discardButton.addEventListener("click", function() {
+       for(var i = 0; i < hand.length; i++){
+            discard.push(hand[i]);
+            hand.splice(i, 1);
+            i--;
+        }
+       
+       refresh(); 
+    });
 }
 
 function drawCards() {
