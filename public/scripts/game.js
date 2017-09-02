@@ -1,5 +1,3 @@
-var draw    = [];
 var discard = [];
 var hand    = [];
-
-alert("Connected");
+var draw    = JSON.parse(document.querySelector(".invisible").textContent);
