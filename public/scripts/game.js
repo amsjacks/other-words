@@ -2,6 +2,7 @@ var HANDSIZE        = 7;
 var SHOWSIZE        = 3;
 var discard         = [];
 var hand            = [];
+var selectedCards   = [];
 var displayCards    = document.querySelectorAll(".card img");
 var draw            = JSON.parse(document.querySelector(".invisible").textContent);
 var drawButton      = document.getElementById("drawButton");
@@ -17,12 +18,15 @@ function init() {
     
     discardButton.addEventListener("click", function() {
        for(var i = 0; i < hand.length; i++){
-            discard.push(hand[i]);
-            hand.splice(i, 1);
-            i--;
+            if(!displayCards.item(i).classList.contains("selected")) {
+                discard.push(hand[i]);
+            } else {
+                selectedCards.push(hand[i]);
+            }
         }
-       
-       refresh(); 
+        hand = selectedCards;
+        selectedCards = [];
+        refresh(); 
     });
 }
 
