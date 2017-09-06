@@ -52,7 +52,10 @@ function drawCards() {
     }
     
     for(var i =0; i < handsize; i++){
-        hand.push(draw.pop());
+        var cardIndex = getRandomInt(0, draw.length - 1);
+        console.log("Index selected: " + cardIndex); // For development/testing
+        hand.push(draw[cardIndex]);
+        draw.splice(cardIndex, 1);
     }
 }
 
@@ -69,4 +72,11 @@ function refresh() {
             displayCards[i].style.display = "none";
         }
     }
+}
+
+// Function pulled from MDN documentation
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
