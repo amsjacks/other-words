@@ -13,6 +13,7 @@ init();
 
 function init() {
     drawButton.addEventListener("click", function(){
+        hand = [];
         drawCards();
         refresh();
     });
