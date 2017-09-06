@@ -57,6 +57,10 @@ function drawCards() {
 
 function refresh() {
     for(var i=0; i < displayCards.length; i++){
+        if(displayCards[i].classList.contains("selected")) { 
+            displayCards[i].classList.remove("selected");
+        }
+        numCardsSelected = 0;
         if(hand[i]){
             displayCards[i].style.display = "inline";
             displayCards[i].src = hand[i].imageURL;
